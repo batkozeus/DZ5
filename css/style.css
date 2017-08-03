@@ -129,16 +129,16 @@ ul li {
 }
 
 form {
-	width: 100%;
+	width: 96%;
 	margin: -2% 2% 2% 2%;
 	background: white;
 }
 
 input {
 	width: 82%;
-	line-height: 2em;
+	line-height: 3em;
 	color: grey;
-	margin: 2% 4%;
+	margin: 4%;
 	padding-left: 14px;
 	font-size: 14px;
 	opacity: 0.5;
@@ -188,4 +188,63 @@ footer div {
 	text-align: center;
 	font-size: 13px;
 	margin: 25px;
+}
+
+
+form ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+form ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+form ul.menu > li {
+    float: left;
+    position: relative;
+    width: 100%;
+	margin-left: 0;
+	padding-left: 1px;
+}
+
+form ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+form ul.submenu {
+    display: none;
+    position: absolute;
+	width: 86%;
+	top: 17%;
+	left: 4.5%;
+	background-color: white;
+	border: 1px solid #f6eded;
+}
+
+form ul.submenu > li {
+    display: block;
+}
+
+form ul.submenu > li > a {
+    display: block;
+	color: black;
+	background-color: white;
+	text-decoration: none;
+	margin-left: -12%;
+	color: black;
+	line-height: 3em;
+}
+
+form ul.menu > li:hover > ul.submenu {
+    display: block;
 }
